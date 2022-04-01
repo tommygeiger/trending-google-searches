@@ -1,6 +1,27 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "Under A Rock",
+  "description": "For people who live under a rock.",
   "version": "1.0",
-  "manifest_version": 3
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "host_permissions": [
+    "https://trends.google.com/"
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "assets/16.png",
+      "32": "assets/32.png",
+      "48": "assets/48.png",
+      "128": "assets/128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/16.png",
+    "32": "assets/32.png",
+    "48": "assets/48.png",
+    "128": "assets/128.png"
+  }
 }

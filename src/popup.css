@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  background-color: white;
+  color: black;
+  font-family: 'Roboto',sans-serif;
+}
+
+article {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+article:hover {
+  background-color: ghostwhite;
+  transition: .1s ease-in-out;
+}
+
+img {
+  height: 5em;
+  width: 5em;
+  margin-left: auto;
+}

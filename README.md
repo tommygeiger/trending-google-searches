@@ -1,2 +1,2 @@
 # under-a-rock
-Google trends browser extension
+For people who live under a rock.
