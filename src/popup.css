@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  width: 500px;
+  width: 610px;
   background-color: white;
   color: rgb(117, 117, 117);
 }
-
 article {
-  padding: 1em .5em;
   display: flex;
   align-items: center;
 }
@@ -15,36 +13,78 @@ article:hover {
   background-color: ghostwhite;
   transition: .1s ease-in-out;
 }
-
-img {
-  height: 6em;
-  width: 6em;
+a:visited { 
+  color:blue; 
 }
-
+.title:visited {
+  color: black;
+}
+img {
+  height: 5em;
+  width: 5em;
+  padding: .5em .5em .5em .5em;
+}
 hr {
   margin: 0;
 }
-
-td {
-  padding: 0em .25em;
+table {
+  width: 100%;
 }
-
+.tableParent {
+  width: 100%;
+}
 .topRow {
   font-size: 1.5em;
 }
-
-.title {
-  color: black;
-}
-
 .centered {
   text-align: center
 }
-
 .link {
   text-decoration: none;
 }
-
-.noWrap {
+.title {
+  color: black;
+}
+.nowrap {
   white-space: nowrap;
 }
+.pictureParent {
+  position: relative;
+  display: inline-block;
+}
+.caption {
+  color: white;
+  font-size: .1em;
+  position: absolute;
+  z-index: 9;
+  margin: 0 10%;
+  bottom: 10%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  width: 80%;
+  white-space: nowrap;
+}
+.headerParent {
+  margin: 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: lightgray 0px 1px 10px -1px;
+  border-bottom: .5px solid black;
+  z-index: 99;
+}
+.header {
+  color: rgb(175, 110, 75);
+  padding: .5em;
+  margin: 0;
+}
+.inlineImg {
+  vertical-align: middle;
+  height: 2em;
+  width: 2em;
+  padding: 0;
+}
+.floatRight {
+  float: right;
+}
+
+  
