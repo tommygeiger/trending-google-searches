@@ -15,10 +15,22 @@ fetch(rssUrl)
         <h2 class="header">
           <img class="inlineImg" src="/assets/48.png">
           ${today.toLocaleDateString("en-Us", {weekday:'long', year:'numeric', month:'long', day:'numeric'})}
-          <a href='https://ko-fi.com/G2G2BYHPN' target='_blank'>
-            <img class="inlineImg floatRight" src="/assets/kofi.png" alt="Buy Me a Coffee"/>
-          </a>
+          <div class="floatRight">
+            <button id="infoButton">&#x2139;</button>
+            <a href='https://ko-fi.com/G2G2BYHPN' target='_blank'>
+              <img class="inlineImg" src="/assets/kofi.png" alt="Buy Me a Coffee"/>
+            </a>
+          </div>
         </h2>
+      </div>
+
+      <div id="infoDiv" style="display:none;">
+        <article>
+          <p class="info">
+          Daily Search Trends highlights searches that jumped significantly in traffic among all searches over the past 24 hours and updates hourly. These search trends show the specific queries that were searched, and the absolute number of searches made.
+          </p>
+        </article>
+        <hr>
       </div>
       `;
 
@@ -58,6 +70,8 @@ fetch(rssUrl)
     });
 
     document.body.insertAdjacentHTML("beforeend", html);
+    document.getElementById("infoButton").addEventListener("click", toggleInfo);
+
   });
 
 
@@ -78,4 +92,14 @@ fetch(rssUrl)
     string = string.replace(/&amp;#39;/g, "'");
     string = string.replace(/&amp;quot;/g, '"');
     return string;
+  }
+
+
+  function toggleInfo() {
+    var x = document.getElementById("infoDiv");
+    if (x.style.display === "none") {
+      x.style.display = "";
+    } else {
+      x.style.display = "none";
+    }
   }
