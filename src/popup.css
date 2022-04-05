@@ -1,102 +1,78 @@
 body {
   margin: 0;
-  padding: 0;
-  width: 610px;
-  background-color: white;
-  color: rgb(117, 117, 117);
+  width: 500px;
+  color: rgb(100,100,100);
+  background-color: rgb(250,250,240);
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 article {
   display: flex;
   align-items: center;
 }
 article:hover {
-  background-color: ghostwhite;
+  background-color: rgb(240,240,230);
   transition: .1s ease-in-out;
 }
+a {
+  text-decoration: none;
+}
 a:visited { 
-  color:blue; 
-}
-.title:visited {
-  color: black;
-}
-img {
-  height: 5em;
-  width: 5em;
-  padding: .5em;
+  color: blue;
 }
 hr {
   margin: 0;
 }
 table {
   width: 100%;
-}
-.tableParent {
-  width: 100%;
+  table-layout: fixed;
+  white-space: nowrap;
 }
 .topRow {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
-.centered {
-  text-align: center
-}
-.link {
-  text-decoration: none;
-}
-.title {
+.articleTitle {
+  font-weight: 500;
   color: black;
 }
-.nowrap {
-  white-space: nowrap;
-}
-.pictureParent {
-  position: relative;
-  display: inline-block;
-}
-.caption {
-  color: white;
-  font-size: .1em;
-  position: absolute;
-  z-index: 9;
-  margin: 0 10%;
-  bottom: 10%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-  width: 80%;
-  white-space: nowrap;
+.articleTitle:visited {
+  color: black;
 }
 .headerParent {
-  margin: 0;
-  position: sticky;
   top: 0;
-  background-color: white;
-  box-shadow: lightgray 0px 1px 10px -1px;
-  border-bottom: .5px solid black;
+  position: sticky;
   z-index: 99;
-  vertical-align: middle;
 }
 .header {
-  color: rgb(175, 110, 75);
-  padding: .5em;
-  margin: 0;
+  background-color: rgb(99, 170, 86);
+  color: white;
+  padding: .3em .7em;
 }
-.inlineImg {
-  vertical-align: middle;
+.headerText {
+  margin: 0;
+  color: black;
+  font-weight: 500;
+}
+.headerImg {
   height: 1.5em;
-  width: 1.5em;
+  width: 1.2em;
   padding: 0;
 }
-.floatRight {
-  float: right;
-}
 .info {
-  padding: 0 3em;
-  transition: height, 0.5s linear;
+  padding: 0 2em;
+}
+#infoDiv {
+  background-color: rgb(250,250,240);
 }
 #infoButton {
-  vertical-align: middle;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: inherit;
 }
-
-  
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center
+}

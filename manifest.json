@@ -1,11 +1,8 @@
 {
-  "name": "Under A Rock",
-  "description": "For people who live under a rock.",
+  "name": "Under a Rock",
+  "description": "News for people who live under a rock.",
   "version": "1.0",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "src/background.js"
-  },
   "host_permissions": [
     "https://trends.google.com/"
   ],
