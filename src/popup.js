@@ -30,13 +30,14 @@ fetch(rssUrl)
           </tr>
         </table>
         <div id="infoDiv" style="display:none;">
+          <hr>
           <article>
             <p class="info">
             Under a Rock reads Google's Daily Search Trends RSS feed, which highlights Google searches that jumped significantly in traffic over the past 24 hours, and updates hourly. Each trend shows the query that was searched, the number of searches made, and the top relevent news article.
             </p>
           </article>
-          <hr>
         </div>
+        <hr>
       </div>
       `;
 
@@ -63,9 +64,11 @@ fetch(rssUrl)
             </tr>
           </table>
         </article>
-        <hr>
       `;
-      i++;
+      if(i < 20){
+        html +="<hr>";
+        i++;
+      }
     });
 
     document.body.insertAdjacentHTML("beforeend", html);
@@ -80,7 +83,7 @@ function abbreviateNumber(string) {
     number /= 1000;
     count += 1;
   }
-  return number.toString() + suffixes[count] + "+";
+  return number.toString() + suffixes[count];
 }
 
 function decodeString(string) {
