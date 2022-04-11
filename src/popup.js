@@ -17,12 +17,12 @@ chrome.storage.local.get("text", ({ text }) => {
           </td>
           <td class="center">
             <h3 class="headerText">
-              ${today.toLocaleDateString("en-Us", {weekday:'long', month:'long', day:'numeric'})}
+              ${today.toLocaleDateString("en-Us", {weekday:'long', month:'long', day:'numeric'}).toUpperCase()}
             </h3>
           </td>
           <td class="right">
             <a href='https://buymeacoff.ee/tommygeiger' target='_blank'>
-              <img class="headerImg" src="/assets/coffee.png" alt="Buy Me a Coffee"/>
+              <img class="headerImg" src="/assets/bmc-logo-no-background.png" alt="Support Me"/>
             </a>
           </td>
         </tr>
@@ -31,8 +31,8 @@ chrome.storage.local.get("text", ({ text }) => {
         <hr>
         <article>
           <p class="info">
-          Trending Searches reads Google's Daily Search Trends RSS feed, highlighting Google searches that jumped significantly in traffic over the last 24 hours, with hourly updates. Each trend shows the query that was searched, the number of searches made, and a relevent news article.
-          <a href="https://trends.google.com/trends/trendingsearches/daily?geo=US" target="_blank">More Trends</a>
+          Trending Google Searches reads Google's Daily Search Trends RSS feed, highlighting Google searches that jumped significantly in traffic over the last 24 hours, with hourly updates. Each trend shows the query that was searched, the number of searches made, and a relevent news article.
+          <a href="https://trends.google.com/trends/?geo=US" target="_blank">Explore More Trends</a>
           </p>
         </article>
       </div>
@@ -91,7 +91,8 @@ function decodeString(string) {
   string = string.replace(/&amp;#39;/g, "'");
   string = string.replace(/&amp;quot;/g, '"');
   string = string.replace(/&amp;/g, "&");
-  string = string.replace(/<[^>]+>/g, "");
+  string = string.replace(/<b>/g, "");
+  string = string.replace(/<\/b>/g, "");
   string = string.replace(/\s\.\.\./g, "...");
   return string;
 }

@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  width: 500px;
-  color: rgb(100,100,100);
-  background-color: rgb(250,250,240);
+  width: 480px;
+  color: rgb(100, 100, 100);
+  font-family: 'Roboto', sans-serif;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -13,14 +13,15 @@ article {
   padding: .3em 0;
 }
 article:hover {
-  background-color: rgb(240,240,230);
+  background-color: rgb(245,245,245);
   transition: .1s ease-in-out;
 }
 a {
   text-decoration: none;
+  color: #4285F4;
 }
 a:visited { 
-  color: blue;
+  color: #4285F4;
 }
 hr {
   margin: 0;
@@ -35,7 +36,6 @@ table {
   font-size: 1.3em;
 }
 .articleTitle {
-  font-weight: 500;
   color: black;
 }
 .articleTitle:visited {
@@ -47,14 +47,13 @@ table {
   z-index: 99;
 }
 .header {
-  background-color: rgb(81, 159, 64);
-  color: white;
+  background-color: #4285F4;
   padding: .3em .7em;
 }
 .headerText {
   margin: 0;
-  color: black;
-  font-weight: 500;
+  color: white;
+  font-weight: normal;
 }
 .headerImg {
   height: 1.5em;
@@ -66,7 +65,7 @@ table {
   padding: .5em 2.5em;
 }
 #infoDiv {
-  background-color: rgb(250,250,240);
+  background-color: white;
 }
 #infoButton {
   background-color: transparent;
