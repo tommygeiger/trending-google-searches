@@ -1,3 +1,5 @@
-# Trending Searches
+# Trending Google Searches
 
-FKA Under a Rock. Chrome extension, reads Google Trends' RSS Feed and displays results in browser.
+Chrome extension that reads Google Trends' RSS Feed and displays results in browser.
+
+[Add to Chrome here.]()
