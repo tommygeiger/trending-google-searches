@@ -15,7 +15,7 @@ function fetchRSS() {
   .then(response => response.text())
   .then(text => {
     chrome.storage.local.set({ text });
-    chrome.action.setBadgeBackgroundColor({ color: "#63aa56"})
+    chrome.action.setBadgeBackgroundColor({ color: "#519f40"})
     chrome.action.setBadgeText({text: "1"});
   });
 }

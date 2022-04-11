@@ -31,8 +31,8 @@ chrome.storage.local.get("text", ({ text }) => {
         <hr>
         <article>
           <p class="info">
-          Under a Rock reads Google's Daily Search Trends RSS feed, highlighting Google searches that jumped significantly in traffic over the past 24 hours, with hourly updates. Each trend shows the query that was searched, the number of searches made, and a relevent news article.
-          <a href="https://trends.google.com/trends/trendingsearches/daily?geo=US" target="_blank">Learn More</a>
+          Trending Searches reads Google's Daily Search Trends RSS feed, highlighting Google searches that jumped significantly in traffic over the last 24 hours, with hourly updates. Each trend shows the query that was searched, the number of searches made, and a relevent news article.
+          <a href="https://trends.google.com/trends/trendingsearches/daily?geo=US" target="_blank">More Trends</a>
           </p>
         </article>
       </div>
