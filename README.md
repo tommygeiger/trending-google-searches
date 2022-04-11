@@ -1,2 +1,3 @@
-# under-a-rock
-News for people who live under a rock.
+# Trending Searches
+
+FKA Under a Rock. Chrome extension, reads Google Trends' RSS Feed and displays results in browser.
