@@ -22,8 +22,8 @@ let html = `
     <hr>
     <article>
       <p class="info">
-      Trending Google Searches reads Google's Daily Search Trends RSS feed, highlighting Google searches that jumped significantly in traffic over the last 24 hours, with hourly updates. Each trend shows the query that was searched, the number of searches made, and a relevent news article.
-      <a href="https://trends.google.com/trends/?geo=US" target="_blank">Explore More Trends</a>
+      Trending Google Searches reads Google's Daily Search Trends RSS feed, highlighting Google searches that jumped significantly in traffic over the last 24 hours, with hourly updates. Each trend shows the search query, the number of searches made, and a relevent news article.
+      <a href="https://trends.google.com/trends/?geo=US" target="_blank">More Trends</a>
       </p>
     </article>
   </div>
