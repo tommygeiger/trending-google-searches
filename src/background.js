@@ -1,6 +1,6 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.tabs.create({
-    url: "src/trending-google-searches.html",
+    url: "https://tommygeiger.com/trending-google-searches",
     active: true
   });
   chrome.action.setBadgeBackgroundColor({ color: "#4285F4"})
