@@ -35,7 +35,7 @@ document.getElementById("infoButton").addEventListener("click", toggleInfo);
 
 
 fetch("https://trends.google.com/trends/trendingsearches/daily/rss?geo=US",
-{mode: 'no-cors'})
+{mode: 'cors', credentials: 'include'})
 .then(response => response.text())
 .then(text => {
   const xmlDoc = new DOMParser().parseFromString(text, "text/xml");
