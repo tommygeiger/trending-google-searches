@@ -1,6 +1,6 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.tabs.create({
-    url: "https://tommygeiger.com/trending-google-searches",
+    url: "/index.html",
     active: true
   });
 });
