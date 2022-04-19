@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  width: 480px;
+  width: 500px;
   color: rgb(100, 100, 100);
-  font-family: 'Roboto', sans-serif;
 }
 html::-webkit-scrollbar {
   display: none;
 }
 article {
+  background-color: white;
   display: flex;
   align-items: center;
   padding: .3em 0;
@@ -31,12 +31,20 @@ table {
   width: 100%;
   table-layout: fixed;
   white-space: nowrap;
+  overflow: hidden;
 }
 .topRow {
   font-size: 1.3em;
 }
 .articleTitle {
   color: black;
+}
+.headline {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0;
+  display: inline-flex;
 }
 .articleTitle:visited {
   color: black;

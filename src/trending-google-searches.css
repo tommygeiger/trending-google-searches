@@ -1,0 +1,38 @@
+body {
+  background-color: #4285F4;
+  margin: auto;
+  top: 50px;
+  margin-top: 350px;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 40px;
+}
+.pin {
+  text-align: center;
+  color: white;
+  z-index: -9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px;
+}
+.title {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  z-index: -9;
+  position: fixed;
+  top: 100px;
+  width: 500px;
+}
+.footer {
+  text-align: center;
+  color: white;
+  z-index: -9;
+  position: fixed;
+  bottom: 0px;
+  width: 500px;
+}
+a.welcomeLink {
+  color: white;
+  text-decoration: underline;
+}

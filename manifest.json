@@ -1,9 +1,8 @@
 {
   "name": "Trending Google Searches",
   "description": "Trending Google searches, delivered right to your browser.",
-  "version": "1.4",
+  "version": "1.5",
   "manifest_version": 3,
-  "permissions": ["storage"],
   "host_permissions": ["https://trends.google.com/"],
   "background": {
     "service_worker": "src/background.js"
