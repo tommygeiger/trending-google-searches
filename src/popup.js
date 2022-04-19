@@ -1,4 +1,4 @@
-chrome.action.setBadgeText({text: ""});
+// chrome.action.setBadgeText({text: ""});
 const today = new Date();
 let html = `
 <div class="headerParent">
