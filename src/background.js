@@ -1,6 +1,6 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.tabs.create({
-    url: "/index.html",
+    url: "index.html",
     active: true
   });
 });

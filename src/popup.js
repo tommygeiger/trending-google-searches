@@ -13,7 +13,7 @@ let html = `
       </td>
       <td class="right">
         <a href='https://buymeacoff.ee/tommygeiger' target='_blank'>
-          <img class="headerImg" src="/assets/bmc-logo-no-background.png" alt="Support Me"/>
+          <img class="headerImg" src="assets/bmc-logo-no-background.png" alt="Support Me"/>
         </a>
       </td>
     </tr>
