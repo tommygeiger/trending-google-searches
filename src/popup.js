@@ -13,7 +13,7 @@ let html = `
       </td>
       <td class="right">
         <a href='https://buymeacoff.ee/tommygeiger' target='_blank'>
-          <img class="headerImg" src="assets/bmc-logo-no-background.png" alt="Support Me"/>
+          <img class="headerImg" src="bmc-logo-no-background.png" alt="Support Me"/>
         </a>
       </td>
     </tr>
@@ -33,9 +33,8 @@ let html = `
 document.body.insertAdjacentHTML("beforeend", html);
 document.getElementById("infoButton").addEventListener("click", toggleInfo);
 
-
-fetch("https://trends.google.com/trends/trendingsearches/daily/rss?geo=US",
-{mode: 'cors', credentials: 'include'})
+// const url = new URL("http://localhost:3001")
+fetch("https://gtrends-cors-proxy.herokuapp.com")
 .then(response => response.text())
 .then(text => {
   const xmlDoc = new DOMParser().parseFromString(text, "text/xml");

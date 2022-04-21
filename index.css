@@ -1,10 +1,12 @@
 body {
+  font-size: small;
   background-color: #4285F4;
   margin: auto;
   top: 50px;
   margin-top: 350px;
   margin-bottom: 50px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 40px;
+  box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.4);
 }
 .pin {
   text-align: center;
