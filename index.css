@@ -19,7 +19,7 @@ body {
   width: 240px;
 }
 .title {
-  font-size: min(12vw, 50px);
+  font-size: min(11vw, 50px);
   text-align: center;
   color: white;
   z-index: -9;
