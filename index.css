@@ -4,27 +4,18 @@ body {
   background-color: #4285F4;
   margin: auto;
   top: 50px;
-  margin-top: 350px;
+  margin-top: 250px;
   margin-bottom: 50px;
   box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.4);
 }
-.pin {
-  text-align: center;
-  color: white;
-  z-index: -9;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 240px;
-}
 .title {
-  font-size: min(12vw, 50px);
+  font-size: min(10vw, 41px);
   text-align: center;
   color: white;
   z-index: -9;
   position: fixed;
-  top: 100px;
+  top: 50px;
   max-width: 500px;
 }
 .footer {
@@ -32,7 +23,7 @@ body {
   color: white;
   z-index: -9;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   max-width: 500px;
   left: 50%;
   transform: translateX(-50%);
@@ -41,7 +32,30 @@ a.indexLink {
   color: white;
   text-decoration: underline;
 }
-
+.triangle{
+  border-left: 100px solid transparent;
+  border-right: 100px solid white;
+  border-bottom: 100px solid transparent;
+  height: 0;
+  width: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: -9;
+}
+.triangleText {
+  font-weight: 800;
+  text-align: center;
+  position: fixed;
+  font-size: 15px;
+  top: 15px;
+  right: -5px;
+  color: #4285f4;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
 
 /* Loading Animation */
 .lds-ellipsis {
@@ -49,7 +63,7 @@ a.indexLink {
   z-index: -9;
   left: 50%;
   transform: translateX(-50%);
-  top: 400px;
+  top: 300px;
   width: 80px;
   height: 80px;
 }
