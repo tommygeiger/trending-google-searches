@@ -34,7 +34,7 @@ document.body.insertAdjacentHTML("beforeend", html);
 document.getElementById("infoButton").addEventListener("click", toggleInfo);
 
 // const url = new URL("http://localhost:3001")
-fetch("https://gtrends-cors-proxy.herokuapp.com")
+fetch("https://gtrends-cors-proxy.fly.dev")
 .then(response => response.text())
 .then(text => {
   const xmlDoc = new DOMParser().parseFromString(text, "text/xml");
