@@ -1,7 +1,7 @@
 {
   "name": "Trending Google Searches",
   "description": "Trending Google searches, delivered right to your browser.",
-  "version": "1.6",
+  "version": "1.7",
   "manifest_version": 3,
   "host_permissions": ["https://trends.google.com/"],
   "action": {
